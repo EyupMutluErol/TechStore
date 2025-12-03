@@ -36,11 +36,11 @@ Proje, sorumluluklarýn ayrýlmasý (Separation of Concerns), sürdürülebilirlik ve 
 
 ## Proje Klasör Yapýsý
 
-* **TechStore.Business
-* **TechStore.DataAccess
-* **TechStore.Entities
-* **TechStore.WebAPI
-* **TechStore.WebUI
+* TechStore.Business
+* TechStore.DataAccess
+* TechStore.Entities
+* TechStore.WebAPI
+* TechStore.WebUI
 
 ##  Lisans ve Telif Hakký
 
