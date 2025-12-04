@@ -1,6 +1,8 @@
-﻿namespace TechStore.Entities.Concrete;
+﻿using TechStore.Entities.Abstract;
 
-public abstract class BaseEntity
+namespace TechStore.Entities.Concrete;
+
+public abstract class BaseEntity:IEntity
 {
     public int Id { get; set; }
     public DateTime CreatedDate { get; set; } = DateTime.Now;

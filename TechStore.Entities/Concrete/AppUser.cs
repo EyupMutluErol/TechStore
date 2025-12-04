@@ -1,9 +1,10 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using System.ComponentModel.DataAnnotations;
+using TechStore.Entities.Abstract;
 
 namespace TechStore.Entities.Concrete;
 
-public class AppUser:IdentityUser
+public class AppUser:IdentityUser,IEntity
 {
     [Display(Name = "Ad")]
     [Required(ErrorMessage = "{0} alanı boş bırakılamaz.")]
@@ -16,6 +17,8 @@ public class AppUser:IdentityUser
     public string LastName { get; set; }
 
     public DateTime CreatedDate { get; set; } = DateTime.Now;
+    public bool IsActive { get; set; } = true;  
+    public bool IsDeleted { get; set; } = false;
 }
 
 public class AppRole : IdentityRole
