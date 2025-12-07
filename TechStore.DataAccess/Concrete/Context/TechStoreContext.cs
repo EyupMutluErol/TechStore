@@ -66,6 +66,7 @@ public class TechStoreContext : IdentityDbContext<AppUser, AppRole, string>
         builder.Entity<Category>().HasQueryFilter(x => !x.IsDeleted);
         builder.Entity<Order>().HasQueryFilter(x => !x.IsDeleted);
         builder.Entity<AppUser>().HasQueryFilter(x => !x.IsDeleted);
+        builder.Entity<OrderDetail>().HasQueryFilter(x => !x.IsDeleted);
 
     }
 }
